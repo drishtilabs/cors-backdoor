@@ -231,6 +231,8 @@ along with some request metadata. The can be modified by setting the `level` opt
 
 ## Acknowledgement
 
+Inspired By [Local Cors Proxy](https://www.npmjs.com/package/local-cors-proxy)
+
 Made with <i class="fas fa-heart" aria-hidden="true" style="color:#c7254e"></i> at  [Drishti Labs ![drishti](./assets/img/drishti-logo.png)](https://drishti.com)
 
 
