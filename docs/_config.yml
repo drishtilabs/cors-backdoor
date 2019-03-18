@@ -2,5 +2,5 @@ title: cors-backdoor
 logo: /assets/img/logo.png
 description: A CORS-friendly local proxy to access cross origin resources
 show_downloads: true
-google_analytics:
+google_analytics: UA-136217739-2
 theme: jekyll-theme-minimal

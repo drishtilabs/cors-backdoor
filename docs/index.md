@@ -51,10 +51,10 @@ hosted on a different domain, for example) and handles the CORS requirements as 
 make requests to the created local proxy server instead of the actual resource provider and work around CORS error 
 temporarily.
 
-###### NOTE: This utility is for development purposes only. Use for production is strongly discouraged. Visit [enable-cors.org](https://enable-cors.org/) for platform specific instructions on how CORS requests be handled correctly on the server side.
+##### NOTE: This utility is for development purposes only. Use for production is strongly discouraged. Visit [enable-cors.org](https://enable-cors.org/) for platform specific instructions on how CORS requests be handled correctly on the server side.
 
 
-##### How it works:
+### How it works:
 
 Every request sent to cors-backdoor, is processed as follows:
 
@@ -81,7 +81,7 @@ cors-backdoor --target <target> [--port <port> ] [--base-url <base-url>] [--conf
  
  Any options passed via a configuration file will override an conflicting options from the command line parameters.
  
- ## Advanced Configuration
+## Advanced Configuration
  
  Sometimes, the default headers set by `cors-backdoor` are not enough (for example, if a custom response header needs 
  to be explicitly exposed using `Access-Control-Expose-Headers`).
@@ -231,7 +231,7 @@ along with some request metadata. The can be modified by setting the `level` opt
 
 ## Acknowledgement
 
-Made with :heart: at  [<img height=16 src="https://raw.githubusercontent.com/drishtilabs/cors-backdoor/master/res/drishti-logo.png" /> Drishti Labs](https://drishti.com)
+Made with <i class="fas fa-heart" aria-hidden="true" style="color:#c7254e"></i> at  [Drishti Labs ![drishti](./assets/img/drishti-logo.png)](https://drishti.com)
 
 
 
