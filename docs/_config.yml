@@ -4,3 +4,4 @@ description: A CORS-friendly local proxy to access cross origin resources
 show_downloads: true
 google_analytics: UA-136217739-2
 theme: jekyll-theme-minimal
+npm: https://www.npmjs.com/package/cors-backdoor
