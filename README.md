@@ -75,10 +75,11 @@ cors-backdoor --target <target> [--port <port> ] [--base-url <base-url>] [--conf
 
 | Option | Parameter | Description |
 | ------ | --------- | ----------- |
+| -h, --help | | Show the help menu |
 | -t, --target | target *required*  | Target host to proxy requests to. Ex: `--target http://api.example.com` |
 | -p, --port | port *optional* | The port on which the proxy server should run. Defaults to `1234` |
 | -b, --base-url | baseUrl *optional* | The optional base URL to proxy onto the target. For example, if the option `--base-url /api/v1` is used, a request to the proxy server of the form `http://localhost:<port>/posts` will be proxied to the specified `target` as `<target>/api/v1/posts`. Defaults to `/` |
-| -c, --config | configPath *optional* | The file path to the configuration to use for advanced configuration. See the advanced configuration section below.
+| -c, --config | configPath *optional* | The file path to the configuration to use for advanced configuration. See the advanced configuration section below. |
  
  
  Any options passed via a configuration file will override an conflicting options from the command line parameters.
