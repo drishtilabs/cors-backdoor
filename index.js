@@ -119,7 +119,7 @@ proxy.use((req, res, next) => {
         Object.keys(config.headers).forEach(key => {
 
                 // Normalise value to an array if it;s not already one
-                const values = Array.isArray(merged[key]) ? merged[key] : [merged[key]];
+                const values = Array.isArray(config.headers[key]) ? config.headers[key] : [config.headers[key]];
 
                 // Combine array values into a single comma separated list
                 const combinedValue = values
@@ -187,10 +187,18 @@ proxy.use(`${baseUrl}`, (req, res) => {
 
 // Start proxy server on the port derived from the merged config
 proxy.listen(config.port, () => {
-    console.log(chalk`\n{green Backdoor to} {yellowBright ${target}} {green initialised on port} {yellowBright ${port}} 🐙`);
-    console.log(chalk`\n{green Available Backdoor Interfaces:}`);
-    [{address: 'localhost'}, ...getLocalExternalInterfaces()]
-        .forEach(({address}) => console.log(chalk`\n\t🚪 {yellowBright http://${address}:${port}${baseUrl}}`));
-    console.log(`\n`);
-    logger.info({config}, `Proxy server running on ${config.port}`);
-});
+        console.log(chalk`\n{green Backdoor to} {yellowBright ${target}} {green initialised on port} {yellowBright ${port}} 🐙`);
+        console.log(chalk`\n{green Available Backdoor Interfaces:}`);
+        [{address: 'localhost'}, ...getLocalExternalInterfaces()]
+            .forEach(({address}) => console.log(chalk`\n\t🚪 {yellowBright http://${address}:${port}${baseUrl}}`));
+        console.log(`\n`);
+        logger.info({config}, `Proxy server running on ${config.port}`);
+    })
+    .on('error', error => {
+        if (error && error.code === 'EADDRINUSE') {
+            console.error(chalk.red(`EADDRINUSE: The port ${config.port} is busy. Please release the port and try again or start cors-backdoor on a different port using the --port option`));
+            return process.exit(0);
+        }
+        console.error(chalk.red(`Unknown error. Please check your configuration and try again`), e);
+        process.exit(1);
+    });

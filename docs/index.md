@@ -44,6 +44,15 @@ cross-origin resources without having to change the server configuration. This i
 development for an app which typically accesses an API on the same origin in production but has to make CORS requests 
 during development.
 
+Common CORS errors:
+
+```sh
+
+Access to fetch at 'http://api.example.com/posts' from origin 'http://localhost:8082' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+
+Access to fetch at 'http://api.example.com/posts' from origin 'http://localhost:8082' has been blocked by CORS policy: Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.
+```
+
 ## Solution: cors-backdoor
 
 This utility creates a local expressjs server which proxies the requests to the cross origin resource provider (An API 
