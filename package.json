@@ -1,6 +1,6 @@
 {
   "name": "cors-backdoor",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "A simple proxy server built using express to bypass cors restrictions during development",
   "main": "index.js",
   "scripts": {
