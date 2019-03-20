@@ -10,8 +10,8 @@
 
 <p align="center">
     <img width=200 height=200 src="https://drishtilabs.github.io/cors-backdoor/assets/img/logo.png" />
-
-A CORS-friendly local proxy to access cross origin resources
+    <p>A CORS-friendly local proxy to access cross origin resources</p>
+</p>
 
 A temporary workaround for common CORS errors like:
 
@@ -22,7 +22,6 @@ Access to fetch at 'http://api.example.com/posts' from origin 'http://localhost:
 Access to fetch at 'http://api.example.com/posts' from origin 'http://localhost:8082' has been blocked by CORS policy: Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.
 ```
 
-</p>
 
 ## Installation
 
