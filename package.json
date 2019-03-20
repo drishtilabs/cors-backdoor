@@ -1,6 +1,6 @@
 {
   "name": "cors-backdoor",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "A simple proxy server built using express to bypass cors restrictions during development",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,8 @@
   "bin": {
     "cors-backdoor": "index.js"
   },
-   "repository": {
-     "type": "git",
-     "url": "https://github.com/drishtilabs/cors-backdoor"
-   }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drishtilabs/cors-backdoor"
+  }
 }
