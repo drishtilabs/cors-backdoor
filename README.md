@@ -1,6 +1,13 @@
 # cors-backdoor
-
-<img width=200 height=200 src="https://raw.githubusercontent.com/drishtilabs/cors-backdoor/master/res/logo.png?sanitize=true&raw=true" />
+<p align="center">
+  <a href="https://drishtilabs.github.io/cors-backdoor"><img src="https://img.shields.io/badge/docs-website-blue.svg"></a>
+  <a href="https://www.npmjs.com/package/cors-backdoor"><img src="https://img.shields.io/npm/v/cors-backdoor.svg" alt="Version"></a>
+  <a href="https://npmcharts.com/compare/cors-backdoor?minimal=true"><img src="https://img.shields.io/npm/dm/cors-backdoor.svg" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/cors-backdoor"><img src="https://img.shields.io/npm/l/cors-backdoor.svg" alt="License"></a>
+  <a href="https://github.com/drishtilabs/cors-backdoor/issues"><img src="https://img.shields.io/github/issues/drishtilabs/cors-backdoor.svg"></a>
+  <a href="https://snyk.io/test/github/drishtilabs/cors-backdoor"><img src="https://snyk.io/test/github/drishtilabs/cors-backdoor/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/drishtilabs/cors-backdoor" style="max-width:100%;"></a>
+</p>
+<img width=200 height=200 src="https://drishtilabs.github.io/cors-backdoor/assets/img/logo.png" />
 
 A CORS-friendly local proxy to access cross origin resources
 

@@ -199,6 +199,7 @@ proxy.listen(config.port, () => {
             console.error(chalk.red(`EADDRINUSE: The port ${config.port} is busy. Please release the port and try again or start cors-backdoor on a different port using the --port option`));
             return process.exit(0);
         }
-        console.error(chalk.red(`Unknown error. Please check your configuration and try again`), e);
+        console.error(chalk.red(`Unknown error: More details in the dump below. Please check your configuration and try again`));
+        logger.error(error);
         process.exit(1);
     });
