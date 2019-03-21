@@ -1,13 +1,13 @@
 {
   "name": "cors-backdoor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple proxy server built using express to bypass cors restrictions during development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name":"Chirag Ravindra",
+    "name": "Chirag Ravindra",
     "email": "cravindra@gmail.com",
     "url": "https://github.com/cravindra"
   },
