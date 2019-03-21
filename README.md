@@ -1,4 +1,5 @@
-# cors-backdoor
+<h1 align="center">cors-backdoor</h1>
+
 <p align="center">
   <a href="https://drishtilabs.github.io/cors-backdoor"><img src="https://img.shields.io/badge/docs-website-blue.svg"></a>
   <a href="https://www.npmjs.com/package/cors-backdoor"><img src="https://img.shields.io/npm/v/cors-backdoor.svg" alt="Version"></a>
@@ -12,6 +13,8 @@
     <img width=200 height=200 src="https://drishtilabs.github.io/cors-backdoor/assets/img/logo.png" />
     <p align="center">A CORS-friendly local proxy to access cross origin resources</p>
 </p>
+
+---
 
 A temporary workaround for common CORS errors like:
 

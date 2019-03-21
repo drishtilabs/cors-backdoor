@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "cravindra",
+  "author": {
+    "name":"Chirag Ravindra",
+    "email": "cravindra@gmail.com",
+    "url": "https://github.com/cravindra"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
@@ -23,5 +27,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/drishtilabs/cors-backdoor"
-  }
+  },
+  "homepage": "https://drishtilabs.github.io/cors-backdoor/?ref=npm",
+  "bugs": "https://github.com/drishtilabs/cors-backdoor/issues"
 }
