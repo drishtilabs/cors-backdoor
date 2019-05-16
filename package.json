@@ -11,6 +11,22 @@
     "email": "cravindra@gmail.com",
     "url": "https://github.com/cravindra"
   },
+  "keywords": [
+    "cors",
+    "cross origin resource sharing",
+    "cors error",
+    "configurable",
+    "cors-backdoor",
+    "backdoor",
+    "proxy",
+    "cors proxy",
+    "node",
+    "express",
+    "dynamic-headers",
+    "middleware",
+    "cors-api",
+    "api"
+  ],
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
